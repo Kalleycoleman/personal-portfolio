@@ -14,10 +14,10 @@ export default function SiteFooter() {
       </div>
       <div className="footer-nav">
         <p>Site Navigation</p>
-        <Link to="/">About Me</Link>
-        <Link to="/about/work">About Work</Link>
-        <Link to="/#process">About Research</Link>
-        <Link to="/#about">About Lecturing</Link>
+        <Link to="/me">About Me</Link>
+        <Link to="/work">About Work</Link>
+        <Link to="/research">About Research</Link>
+        <Link to="/lecturing">About Lecturing</Link>
       </div>
       <p className="footer-note">Designed for clarity. Built with care.</p>
     </footer>

@@ -17,13 +17,13 @@ const traits = [
 const skills = [
   ['heart', 'Figma'], ['heart', 'Gemini'], ['heart', 'Jira'], ['heart', 'Confluence'],
   ['star', 'Eye-Tracking'], ['star', 'Usability Testing'], ['star', 'User Interviews'],
-  ['moon', 'UX Adoption'], ['moon', 'Design–Development Collaboration'], ['moon', 'Requirements Analysis'],
+  ['moon', 'UX Adoption'], ['moon', 'Design and Development Collaboration'], ['moon', 'Requirements Analysis'],
 ]
 
 const projects = [
   {
     title: 'Building Some Legoz',
-    summary: 'Improving a major enterprise metadata platform over three versions—reducing task time, improving usability, and growing UX adoption.',
+    summary: 'Improving a major enterprise metadata platform over three versions, reducing task time, improving usability, and growing UX adoption.',
     image: asset('alt-home-3', 'image 11.png'),
     tone: 'lilac',
     href: '/work',
@@ -34,7 +34,7 @@ const projects = [
     image: asset('alt-home-3', 'image 21.png'),
     secondImage: asset('alt-home-3', 'image 22.png'),
     tone: 'rose',
-    href: '/about/work#lecturing',
+    href: '/lecturing#inscape',
   },
   {
     title: 'Vroom Vroom!',
@@ -42,14 +42,14 @@ const projects = [
     image: asset('alt-home-3', 'image 8.png'),
     secondImage: asset('alt-home-3', 'image 9.png'),
     tone: 'blue',
-    href: '/about/work#research',
+    href: '/work#vroom-vroom',
   },
   {
     title: 'Videoplay and Chill',
     summary: 'Testing a video-streaming platform to find weak points, gather insights, and help onboard more than 850k subscribers.',
     image: asset('alt-home-3', 'Dashboard 3 - Natasha Gaze Point 1.png'),
     tone: 'mist',
-    href: '/about/work#videoplay',
+    href: '/work#videoplay',
   },
 ]
 
@@ -114,10 +114,10 @@ export default function HomePage() {
               {skills.map(([icon, text]) => <Pill key={text} icon={icon}>{text}</Pill>)}
             </div>
             <div className="photo-collage">
-              <img className="collage-one" src={asset('alt-home-2', '20200206_094811 2.png')} alt="UX sketching and planning materials" />
-              <img className="collage-two" src={asset('alt-home-2', 'quick steps 1.png')} alt="UX process notes on a whiteboard" />
-              <img className="collage-three" src={asset('alt-home-2', '20190802_124540 2.png')} alt="UX research environment" />
-              <img className="collage-four" src={asset('alt-home-2', '20190723_124749 1.png')} alt="Affinity mapping with sticky notes" />
+              <img src={asset('alt-home-2', '20190807_094640 1.png')} alt="Sketching an interface on paper" />
+              <img src={asset('alt-home-2', '20190723_124749 1.png')} alt="UX flow sketched on a whiteboard" />
+              <img src={asset('alt-home-2', '20200206_094811 2.png')} alt="UX research lab and presentation area" />
+              <img src={asset('alt-home-2', '20190802_124540 2.png')} alt="Affinity mapping with sticky notes" />
             </div>
           </Reveal>
 

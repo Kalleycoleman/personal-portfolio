@@ -4,6 +4,9 @@ import SiteHeader from './components/SiteHeader'
 import HomePage from './pages/HomePage'
 import WorkPage from './pages/WorkPage'
 import AboutWorkPage from './pages/AboutWorkPage'
+import ResearchPage from './pages/ResearchPage'
+import LecturingPage from './pages/LecturingPage'
+import MePage from './pages/MePage'
 
 function ScrollManager() {
   const { pathname, hash } = useLocation()
@@ -38,6 +41,9 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/about/work" element={<AboutWorkPage />} />
+        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/lecturing" element={<LecturingPage />} />
+        <Route path="/me" element={<MePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
