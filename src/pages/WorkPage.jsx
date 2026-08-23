@@ -30,11 +30,29 @@ function Highlights({ children }) {
   )
 }
 
+function FullStory({ children }) {
+  return (
+    <Reveal className="full-story-wrap">
+      <details className="full-story">
+        <summary>
+          <span>TLDR</span>
+          <strong>Read the full case study</strong>
+        </summary>
+        <div className="full-story-content">{children}</div>
+      </details>
+    </Reveal>
+  )
+}
+
 export default function WorkPage() {
   return (
     <main className="detail-page work-page page-top">
       <div className="detail-shell content-width">
         <Link className="back-link" to="/"><ArrowLeft size={18} />Back home</Link>
+
+        <Reveal className="work-disclaimer">
+          <strong>Disclaimer:</strong> A lot of my work falls under non-disclosure agreements due to being proprietary software. Therefore, only some screenshots can be shown. Please contact me to view more.
+        </Reveal>
 
         <article className="profile-section first-profile" id="building-some-legoz">
           <Reveal>
@@ -74,6 +92,33 @@ export default function WorkPage() {
             </Reveal>
             <Reveal delay={100} className="framed-media"><img src={workAsset('DI Builder - Terms 1 1.png')} alt="Data Intelligence term builder" /></Reveal>
           </div>
+
+          <FullStory>
+            <section>
+              <h3>Setting the Stage</h3>
+              <p>I was hired as the sole UX Designer of the company to revamp a legacy enterprise metadata management platform called Fraxes/Legoz. Throughout my time at the company, the platform underwent three versions, or redesigns, which each tangibly improved user expectations, experience, and performance. Each iteration was based on user feedback, research, and alignment with modern UX and UI standards while keeping user satisfaction and familiarity high.</p>
+            </section>
+            <section>
+              <h3>The Problem</h3>
+              <p>The Fraxes system suffered from unnecessary task-completion time for both complex and basic workflows, an outdated user experience, and non-users designing the user experience.</p>
+              <p>My first task as UX Designer was: “Here are some wireframes drawn by the business analyst. Make them pretty and reduce the clicks.” The wireframes were created in Microsoft Publisher. I certainly had my work cut out for me. I decided I would first need to make the new design “pretty,” but that I would also need to gain the trust of all involved stakeholders so that I could properly apply UX principles. My Master’s research on using principles of persuasion to influence company UX adoption would be coming in very handy.</p>
+            </section>
+            <section>
+              <h3>The Solution</h3>
+              <p>A full-scale product redesign began. This was known as Version 1. To gain trust, I started communicating daily with back-end and front-end developers to understand the capability of our code, as the company used a proprietary platform developed in-house. There was a time crunch and I did not want to promise designs that would overextend our current development capabilities.</p>
+              <p>I also arranged meetings with product owners and users to determine their goals and frustrations. I rallied for structured usability testing and heuristic evaluation once the redesign was completed, and I was promised a week of testing. I joined workshops to understand the intricacies of data sources, entities, and data objects so I could better understand my users’ work. With this information in hand, I began work on more than 70 screens.</p>
+            </section>
+            <section>
+              <h3>The Results</h3>
+              <p>Version 1 reduced one to three clicks per process, resulting in a 40% reduction overall, and produced a 70% improvement in usability compared with the previous design. Evidence included SUS scores, task quality and completion-time comparisons, questionnaires, and validation after the system went live. A new member was added to my team, and the redesign helped attract additional clients and projects.</p>
+              <p>The biggest achievement of Version 1 was the opportunity to collaborate with Deloitte on an intelligent data-ontology management system. That work inspired Version 2 and the creation of a second system, Data Intelligence. Version 2 began with competitor analysis, stakeholder alignment, and increased UX trust. It reduced task time by 50% for various processes, introduced navigation that made data easier to access, supported multitasking and dashboards, and established a company-wide design guide.</p>
+              <p>Version 3 focused on how new AI design technologies, including Claude Design and Figma Make/Agent, could fit into our process. The team grew to three members, explored where AI would be useful, began UX prompt engineering, tested preliminary designs, and compiled an updated design guide. This was where I left the Legoz project, with the groundwork in place for the current design team to continue.</p>
+            </section>
+            <section>
+              <h3>Data Intelligence</h3>
+              <p>The Data Intelligence system was a joint project with Deloitte that strives to manage complex data ontologies in an understandable, easily readable way. I learned about data ontologies, terms, domains, and how to model them effectively so I could create a design users would find delightful. I worked closely with Deloitte stakeholders to understand the nuances of these concepts and the user stories around them. It was a challenging, rewarding project planned for commercial release in 2026.</p>
+            </section>
+          </FullStory>
         </article>
 
         <article className="profile-section" id="videoplay">
@@ -89,11 +134,15 @@ export default function WorkPage() {
             <Reveal delay={80}><h3>The Solution</h3><p>I created the test scenario, facilitated usability and eye-tracking sessions, analysed gaze plots and heat maps, compiled the findings, and presented recommendations at Vodacom HQ.</p></Reveal>
             <Reveal delay={160}><h3>The Results</h3><p>The report paired every identified frustration with behavioural evidence and a practical recommendation, giving the product team a focused path to release.</p></Reveal>
           </div>
-          <Reveal className="research-gallery three-up">
+          <Reveal className="research-gallery two-up">
             <img src={caseAsset('Dashboard 3 - Natasha 1.png')} alt="Videoplay usability test recording" />
             <img src={caseAsset('Dashboard 3 - Natasha Gaze Point 1.png')} alt="Videoplay gaze point analysis" />
-            <img src={caseAsset('image 19.png')} alt="Videoplay eye-tracking heatmap" />
           </Reveal>
+          <FullStory>
+            <section><h3>The Problem</h3><p>Videoplay had developed new features for its video-streaming service and needed to understand whether people could use them successfully before launch. The product team needed behavioural evidence, not assumptions, to identify where the experience caused hesitation, confusion, or failure.</p></section>
+            <section><h3>The Solution</h3><p>I created a realistic test scenario, facilitated usability and eye-tracking sessions, and observed how participants moved through the proposed features. I analysed recordings, gaze plots, and heat maps to connect what participants said with what they actually attended to on screen. I then compiled the findings and presented the recommendations at Vodacom HQ.</p></section>
+            <section><h3>The Results</h3><p>The final report paired each usability frustration with clear behavioural evidence and a practical recommendation, giving the product team a focused path to release. After the recommendations were implemented, Videoplay remained in service for three years and served more than 850,000 subscribers.</p></section>
+          </FullStory>
         </article>
 
         <article className="profile-section" id="mukuru-magic">
@@ -115,6 +164,11 @@ export default function WorkPage() {
             <img src={caseAsset('IMG_5879 1.png')} alt="Mukuru usability testing" />
             <img src={caseAsset('Screenshot_20200327-154456 1.png')} alt="Mukuru mobile transfer screen" />
           </Reveal>
+          <FullStory>
+            <section><h3>The Problem</h3><p>The design and testing phases had an unusually short timeline, while a separate development company would implement the final experience. That made clear requirements, useful handover material, and fast feedback especially important.</p></section>
+            <section><h3>The Solution</h3><p>I researched competing money-transfer services including Mama Money, Hello Paisa, and Wise, then helped create and combine wireframes for the Send Money workflow. The team worked in short research, wireframing, critique, and usability-testing sprints. When the 2020 lockdown threatened the research plan, we reorganised the work and completed the scheduled sessions safely.</p></section>
+            <section><h3>The Results</h3><p>Testing uncovered implementation inconsistencies, prototype bugs, and confusing support and documentation flows before those issues could become established product behaviour. The findings shaped the released application and its core money-transfer workflows, contributing to a service that supports millions of customers and hundreds of millions of transactions.</p></section>
+          </FullStory>
         </article>
 
         <article className="profile-section" id="vroom-vroom">
@@ -135,6 +189,11 @@ export default function WorkPage() {
             <img src={caseAsset('image 18.png')} alt="BMW eye-tracking evaluation" />
             <img src={caseAsset('image 19.png')} alt="BMW usability findings" />
           </Reveal>
+          <FullStory>
+            <section><h3>The Problem</h3><p>BMW employees relied on internal systems every day, but the interfaces presented overwhelming amounts of data and demanded extensive training. Familiar interaction expectations did not always work, icons were difficult to understand, and some content appeared in mixed languages.</p></section>
+            <section><h3>The Solution</h3><p>I worked with BMW employees to create realistic scenarios, then facilitated three days of sessions with both new and expert users. Questionnaires captured participants’ expectations and perceptions, while eye-tracking evidence showed where attention went, what people missed, and where workflows broke down.</p></section>
+            <section><h3>The Results</h3><p>The evaluation identified concrete issues including hidden search actions, keyboard behaviour that did not work as expected, unfamiliar icons, and inconsistent language. Our report gave the core development team clear evidence and recommendations. BMW’s local team presented the findings to its German headquarters, and the collaboration continued with evaluations of further internal systems.</p></section>
+          </FullStory>
         </article>
       </div>
       <SiteFooter />

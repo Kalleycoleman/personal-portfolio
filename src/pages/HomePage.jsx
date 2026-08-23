@@ -140,7 +140,7 @@ export default function HomePage() {
             <div className="partner-strip" aria-label="Selected clients and collaborators">
               <img src={asset('alt-home-3', 'image 4.png')} alt="University of Pretoria" />
               <img src={asset('alt-home-3', 'image 5.png')} alt="Inscape" />
-              <span className="bmw-mark">BMW</span>
+              <img className="bmw-logo" src="/assets/bmw.svg" alt="BMW" />
               <img src={asset('alt-home-3', 'image 2.png')} alt="Mukuru" />
               <img src={asset('alt-home-3', 'image 3.png')} alt="Deloitte" />
               <img src={asset('alt-home-3', 'image 23.png')} alt="Vodacom" />

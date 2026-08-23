@@ -1,4 +1,4 @@
-import { ArrowLeft, Heart, Moon, Star } from 'lucide-react'
+import { ArrowLeft, ArrowUpRight, Heart, Moon, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import SiteFooter from '../components/SiteFooter'
@@ -63,12 +63,18 @@ export default function ResearchPage() {
             <h2>Gender Discursive Struggles in Online Gaming Communities</h2>
             <p>An exploration of identity, discourse, and participation in online gaming spaces, with attention to the experiences created by community norms and interaction.</p>
             <Factsheet items={['Online Gaming', 'Gender Discourse', 'Community Research']} />
+            <a className="published-article-link" href="https://www.emerald.com/itp/article-abstract/33/2/576/174404/Exploring-gender-discursive-struggles-about-social?redirectedFrom=fulltext" target="_blank" rel="noreferrer">
+              Read the published article <ArrowUpRight size={17} />
+            </a>
           </Reveal>
           <Reveal className="research-topic" id="emotionally-vulnerable" delay={100}>
             <p className="eyebrow">Research Topic</p>
             <h2>UXD for the Emotionally Vulnerable</h2>
             <p>A human-centred investigation into how digital products can better support people when emotion, stress, and vulnerability affect the way an experience is understood.</p>
             <Factsheet items={['Inclusive UX', 'Emotional Design', 'Human Factors']} />
+            <a className="published-article-link" href="https://easychair.org/publications/paper/sB4S" target="_blank" rel="noreferrer">
+              Read the published article <ArrowUpRight size={17} />
+            </a>
           </Reveal>
         </div>
       </div>

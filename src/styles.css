@@ -114,7 +114,7 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .partners-title { margin-bottom: 26px; }
 .partner-strip { min-height: 70px; display: flex; align-items: center; gap: clamp(24px, 4vw, 58px); flex-wrap: wrap; margin-bottom: 42px; }
 .partner-strip img { max-width: 125px; max-height: 55px; object-fit: contain; filter: saturate(.95); }
-.bmw-mark { width: 58px; height: 58px; border: 5px double #333; border-radius: 50%; display: grid; place-items: center; font: 600 .68rem 'Geist Mono'; background: conic-gradient(#fff 0 25%, #77b9dd 0 50%, #fff 0 75%, #77b9dd 0); color: #111; box-shadow: inset 0 0 0 9px #fff; }
+.partner-strip .bmw-logo { width: 56px; height: 56px; object-fit: contain; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .project-card { min-height: 295px; padding: 28px; display: grid; grid-template-columns: 1.15fr .85fr; gap: 20px; border-radius: 4px; text-decoration: none; overflow: hidden; border: 1px solid rgba(51,51,51,.035); transition: transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease; }
 .project-card:hover { transform: translateY(-7px); box-shadow: 0 24px 56px rgba(55,48,50,.12); }
@@ -197,6 +197,8 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .profile-section h1, .profile-section > .reveal > h2, .research-topic h2 { margin-bottom: 24px; font-size: clamp(2.45rem, 5vw, 5.25rem); line-height: 1.02; letter-spacing: -.07em; font-weight: 500; }
 .profile-section h2 { font-size: clamp(1.75rem, 3.3vw, 3.2rem); line-height: 1.1; letter-spacing: -.05em; font-weight: 500; }
 .detail-lede { max-width: 940px; font-size: clamp(1.05rem, 1.7vw, 1.32rem); line-height: 1.6; color: #4f4f4f; }
+.work-disclaimer { margin: -12px 0 46px; padding: 16px 19px; border: 1px solid #eadde0; border-radius: 9px; background: #fff7f7; color: #5f5054; font-size: .82rem; line-height: 1.55; }
+.work-disclaimer strong { font-family: 'Geist Mono', monospace; color: var(--ink); }
 .project-factsheet { margin-top: 34px; }
 .project-factsheet .eyebrow { margin-bottom: 12px; }
 .project-highlights { margin-top: 52px; padding: 30px 34px; border-left: 4px solid var(--lilac); border-radius: 0 12px 12px 0; background: #faf8fb; }
@@ -214,6 +216,7 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .detail-split { margin-top: 75px; padding: clamp(28px, 5vw, 60px); display: grid; grid-template-columns: .75fr 1.25fr; gap: 50px; align-items: center; border-radius: 16px; background: #f2f0ff; }
 .framed-media img { width: 100%; border: 1px solid #ddd; border-radius: 8px; }
 .research-gallery { margin-top: 55px; display: grid; gap: 14px; }
+.research-gallery.two-up { grid-template-columns: repeat(2, 1fr); }
 .research-gallery.three-up { grid-template-columns: repeat(3, 1fr); }
 .research-gallery.four-up { grid-template-columns: repeat(4, 1fr); }
 .research-gallery img { width: 100%; height: 310px; padding: 8px; object-fit: contain; border-radius: 10px; background: #f2f2f5; }
@@ -226,6 +229,23 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .research-topic:nth-child(1) { background: #fffafa; }
 .research-topic:nth-child(2) { background: #f6f5fb; }
 .research-topic h2 { font-size: clamp(1.6rem, 3vw, 2.8rem); }
+.published-article-link { margin-top: 28px; display: inline-flex; align-items: center; gap: 7px; font: 500 .8rem 'Geist Mono'; text-underline-offset: 5px; }
+.published-article-link:hover svg { transform: translate(2px, -2px); }
+.published-article-link svg { transition: transform .2s ease; }
+.full-story-wrap { margin-top: 58px; }
+.full-story { overflow: hidden; border: 1px solid #dddce5; border-radius: 13px; background: #fbfbfd; }
+.full-story summary { min-height: 76px; padding: 20px 24px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; list-style: none; cursor: pointer; user-select: none; }
+.full-story summary::-webkit-details-marker { display: none; }
+.full-story summary > span { padding: 6px 9px; border-radius: 6px; background: #e8e5f7; font: 600 .72rem 'Geist Mono'; letter-spacing: .08em; }
+.full-story summary > strong { font: 500 clamp(.95rem, 1.5vw, 1.08rem) 'Geist Mono'; }
+.full-story summary::after { content: '+'; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: #fff; font: 500 1.4rem 'Geist Mono'; transition: transform .25s ease, background .25s ease; }
+.full-story[open] summary { border-bottom: 1px solid #dddce5; }
+.full-story[open] summary::after { transform: rotate(45deg); background: #fff2f2; }
+.full-story-content { padding: clamp(26px, 5vw, 54px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px 52px; }
+.full-story-content section { min-width: 0; }
+.full-story-content h3 { margin-bottom: 14px; font-size: clamp(1.2rem, 2vw, 1.7rem); font-weight: 500; }
+.full-story-content p { color: #525252; line-height: 1.72; }
+.full-story-content p:last-child { margin-bottom: 0; }
 .teaching-statement { margin-top: 58px; padding: clamp(34px, 7vw, 78px); display: flex; flex-direction: column; gap: 9px; border-radius: 16px; background: linear-gradient(135deg, #fff2f2, #e5e4f5); }
 .teaching-statement span { font: 500 clamp(1.8rem, 4vw, 4rem) 'Geist Mono'; }
 .teaching-statement strong { font-size: clamp(1.05rem, 2vw, 1.6rem); font-weight: 400; }
@@ -269,9 +289,10 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
   .wide-media, .screenshot-row { grid-template-columns: 1fr; }
   .article-media-grid, .eye-tracking-gallery { grid-template-columns: 1fr; }
   .story-grid, .story-grid.two-up-story, .detail-split, .research-topic-grid, .me-intro-grid { grid-template-columns: 1fr; }
-  .version-gallery, .research-gallery.three-up, .research-gallery.four-up, .me-gallery { grid-template-columns: 1fr 1fr; }
+  .version-gallery, .research-gallery.two-up, .research-gallery.three-up, .research-gallery.four-up, .me-gallery { grid-template-columns: 1fr 1fr; }
   .research-feature-grid { grid-template-columns: 1fr; }
   .research-feature-grid img { min-height: 0; }
+  .full-story-content { grid-template-columns: 1fr; }
   .site-footer { grid-template-columns: 1fr; }
 }
 
@@ -308,8 +329,11 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
   .detail-shell { padding-block: 48px 80px; }
   .profile-section { padding-block: 68px; }
   .project-highlights { padding: 24px; }
-  .version-gallery, .research-gallery.three-up, .research-gallery.four-up, .me-gallery { grid-template-columns: 1fr; }
+  .version-gallery, .research-gallery.two-up, .research-gallery.three-up, .research-gallery.four-up, .me-gallery { grid-template-columns: 1fr; }
   .research-gallery img { height: 260px; }
+  .full-story summary { padding: 17px 16px; gap: 10px; }
+  .full-story summary > strong { font-size: .82rem; }
+  .full-story-content { padding: 24px 18px; }
   .character-factsheet dl > div { grid-template-columns: 1fr; gap: 5px; }
   .me-gallery img { height: 330px; }
 }

@@ -22,9 +22,11 @@ export default function MePage() {
                 <h2>Character Factsheet</h2>
                 <dl>
                   <div><dt>Name</dt><dd>Kalley Coleman</dd></div>
-                  <div><dt>Class</dt><dd>UX Designer, Researcher, Lecturer</dd></div>
-                  <div><dt>Based in</dt><dd>South Africa</dd></div>
-                  <div><dt>Experience</dt><dd>7+ years</dd></div>
+                  <div><dt>Age</dt><dd>32</dd></div>
+                  <div><dt>Education</dt><dd>Master’s Degree</dd></div>
+                  <div><dt>Location</dt><dd>South Africa (Willing to Relocate)</dd></div>
+                  <div><dt>Hobbies</dt><dd>Gaming, reading, model kits, horse-riding</dd></div>
+                  <div><dt>Favourites</dt><dd>Gojo Satoru, sour candy, Stargate, Neon Genesis Evangelion</dd></div>
                 </dl>
                 <div className="pill-row">
                   <span className="pill pill-heart"><Heart size={14} />Gamer</span>
@@ -41,10 +43,10 @@ export default function MePage() {
           <Reveal className="project-highlights me-highlights">
             <h2>Highlights</h2>
             <ul>
-              <li>I bring a user-driven mindset to work and everyday life.</li>
-              <li>I have played video games since Warcraft 3 and enjoy Final Fantasy XV, Arknights, and Honkai: Star Rail.</li>
-              <li>I spend as much free time as possible with my cats and my horse.</li>
-              <li>I love travelling, visiting family overseas, and planning the next destination.</li>
+              <li>I can not only set up an IV line, but I can administer subcutaneous fluids to cats.</li>
+              <li>My horse not only survived a stroke, but is currently thriving.</li>
+              <li>I was the best history student in my high school.</li>
+              <li>I have been part of a WHO study.</li>
             </ul>
           </Reveal>
 
