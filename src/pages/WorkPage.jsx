@@ -35,7 +35,6 @@ function FullStory({ children }) {
     <Reveal className="full-story-wrap">
       <details className="full-story">
         <summary>
-          <span>TLDR</span>
           <strong>Read the full case study</strong>
         </summary>
         <div className="full-story-content">{children}</div>
@@ -51,7 +50,7 @@ export default function WorkPage() {
         <Link className="back-link" to="/"><ArrowLeft size={18} />Back home</Link>
 
         <Reveal className="work-disclaimer">
-          <strong>Disclaimer:</strong> A lot of my work falls under non-disclosure agreements due to being proprietary software. Therefore, only some screenshots can be shown. Please contact me to view more.
+          <strong>Disclaimer:</strong> A lot of my work falls under non-disclosure agreements due to being proprietary software. Therefore only some screenshots can be shown and have been intentionally obfuscated. Please contact me to view more.
         </Reveal>
 
         <article className="profile-section first-profile" id="building-some-legoz">
@@ -89,6 +88,7 @@ export default function WorkPage() {
             <Reveal>
               <h2>Data Intelligence</h2>
               <p>A joint project with Deloitte turned complex data ontologies, terms, and domains into an understandable product. Close stakeholder collaboration translated specialised concepts and user stories into an interface people could use confidently.</p>
+              <p className="availability-note">Not yet commercially available.</p>
             </Reveal>
             <Reveal delay={100} className="framed-media"><img src={workAsset('DI Builder - Terms 1 1.png')} alt="Data Intelligence term builder" /></Reveal>
           </div>
@@ -165,9 +165,22 @@ export default function WorkPage() {
             <img src={caseAsset('Screenshot_20200327-154456 1.png')} alt="Mukuru mobile transfer screen" />
           </Reveal>
           <FullStory>
-            <section><h3>The Problem</h3><p>The design and testing phases had an unusually short timeline, while a separate development company would implement the final experience. That made clear requirements, useful handover material, and fast feedback especially important.</p></section>
-            <section><h3>The Solution</h3><p>I researched competing money-transfer services including Mama Money, Hello Paisa, and Wise, then helped create and combine wireframes for the Send Money workflow. The team worked in short research, wireframing, critique, and usability-testing sprints. When the 2020 lockdown threatened the research plan, we reorganised the work and completed the scheduled sessions safely.</p></section>
-            <section><h3>The Results</h3><p>Testing uncovered implementation inconsistencies, prototype bugs, and confusing support and documentation flows before those issues could become established product behaviour. The findings shaped the released application and its core money-transfer workflows, contributing to a service that supports millions of customers and hundreds of millions of transactions.</p></section>
+            <section>
+              <h3>The Problem</h3>
+              <p>The design and testing phases had an unusually short timeline. A separate development company would also be responsible for implementing the final experience, so our requirements and handover material had to be especially clear.</p>
+              <p>The team needed to understand an unfamiliar financial-services space, design the core Send Money workflow, and test it quickly enough for the findings to remain useful to development.</p>
+            </section>
+            <section>
+              <h3>The Solution</h3>
+              <p>I researched competing money-transfer services, including Mama Money, Hello Paisa, and Wise, to understand the established patterns and expectations in the market. I then helped create, critique, and combine wireframes for the Send Money workflow.</p>
+              <p>We worked in short sprints that moved between research, wireframing, critique, and usability testing. This let the team respond to feedback quickly and provide the external development team with useful, current handover material.</p>
+              <p>When the 2020 lockdown threatened the research plan, we reorganised the work so that the scheduled usability-testing sessions could still be completed safely.</p>
+            </section>
+            <section>
+              <h3>The Results</h3>
+              <p>Testing uncovered implementation inconsistencies, prototype bugs, and confusing support and documentation flows before those issues could become established product behaviour.</p>
+              <p>The findings shaped the released application and its core money-transfer workflows. The resulting application helped Mukuru grow into a leading African remittance service that supports millions of customers and hundreds of millions of transactions.</p>
+            </section>
           </FullStory>
         </article>
 
@@ -190,9 +203,21 @@ export default function WorkPage() {
             <img src={caseAsset('image 19.png')} alt="BMW usability findings" />
           </Reveal>
           <FullStory>
-            <section><h3>The Problem</h3><p>BMW employees relied on internal systems every day, but the interfaces presented overwhelming amounts of data and demanded extensive training. Familiar interaction expectations did not always work, icons were difficult to understand, and some content appeared in mixed languages.</p></section>
-            <section><h3>The Solution</h3><p>I worked with BMW employees to create realistic scenarios, then facilitated three days of sessions with both new and expert users. Questionnaires captured participants’ expectations and perceptions, while eye-tracking evidence showed where attention went, what people missed, and where workflows broke down.</p></section>
-            <section><h3>The Results</h3><p>The evaluation identified concrete issues including hidden search actions, keyboard behaviour that did not work as expected, unfamiliar icons, and inconsistent language. Our report gave the core development team clear evidence and recommendations. BMW’s local team presented the findings to its German headquarters, and the collaboration continued with evaluations of further internal systems.</p></section>
+            <section>
+              <h3>The Problem</h3>
+              <p>BMW employees relied on several internal systems every day, but users described their workflows as inefficient and unintuitive. The interfaces presented overwhelming amounts of data and required extensive training before employees could use them confidently.</p>
+              <p>Familiar interaction expectations did not always work, icons were difficult to understand, important actions were easy to miss, and some content appeared in mixed languages.</p>
+            </section>
+            <section>
+              <h3>The Solution</h3>
+              <p>I worked with BMW employees to create realistic test scenarios based on the tasks they performed in their day-to-day work. I then facilitated three days of sessions with both new and expert users.</p>
+              <p>Questionnaires captured participants’ expectations and perceptions, while usability observations and eye-tracking evidence showed where attention went, what people missed, and exactly where workflows broke down.</p>
+            </section>
+            <section>
+              <h3>The Results</h3>
+              <p>The evaluation identified concrete issues, including hidden search actions, keyboard behaviour that did not work as expected, unfamiliar icons, mixed-language content, and interactions that demanded unnecessary training.</p>
+              <p>Our report connected those findings to clear evidence and practical recommendations for the core development team. BMW’s local team presented the work to its German headquarters, and the collaboration continued with evaluations of further internal systems.</p>
+            </section>
           </FullStory>
         </article>
       </div>

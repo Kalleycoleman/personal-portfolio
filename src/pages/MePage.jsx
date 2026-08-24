@@ -23,7 +23,7 @@ export default function MePage() {
                 <dl>
                   <div><dt>Name</dt><dd>Kalley Coleman</dd></div>
                   <div><dt>Age</dt><dd>32</dd></div>
-                  <div><dt>Education</dt><dd>Master’s Degree</dd></div>
+                  <div><dt>Education</dt><dd>Master’s Degree (MCom Informatics - University of Pretoria)</dd></div>
                   <div><dt>Location</dt><dd>South Africa (Willing to Relocate)</dd></div>
                   <div><dt>Hobbies</dt><dd>Gaming, reading, model kits, horse-riding</dd></div>
                   <div><dt>Favourites</dt><dd>Gojo Satoru, sour candy, Stargate, Neon Genesis Evangelion</dd></div>
