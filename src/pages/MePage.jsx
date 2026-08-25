@@ -40,22 +40,23 @@ export default function MePage() {
             <Reveal delay={100} className="me-portrait"><img src={meAsset('20230430_093150 1.png')} alt="Kalley outdoors" /></Reveal>
           </div>
 
+          <Reveal className="me-story">
+            <h2>Get to Know Me</h2>
+            <p>I&apos;m a UX Designer and Researcher passionate about understanding people, uncovering insights and transforming complexity into experiences that feel intuitive and effortless.</p>
+            <p>I’ve had the honour of attending an in-person lecture presented by Prof Ben Schneiderman - one of the ‘fathers’ of UX, and his lecture shaped my UX-thinking.</p>
+            <p>Whether I&apos;m leading research initiatives, facilitating usability studies or shaping product experiences, I&apos;m motivated by one question:</p>
+            <p className="me-question">How can we make this easier for the people who use it?</p>
+            <p>Outside of design, you&apos;ll find me with my horse, my cats, tinkering with model kits, planning my next adventure or diving into a new area of research.</p>
+          </Reveal>
+
           <Reveal className="project-highlights me-highlights">
-            <h2>Highlights</h2>
+            <h2>Fun Facts</h2>
             <ul>
               <li>I can not only set up an IV line, but I can administer subcutaneous fluids to cats.</li>
               <li>My horse not only survived a stroke, but is currently thriving.</li>
               <li>I was the best history student in my high school.</li>
               <li>I have been part of a WHO study.</li>
             </ul>
-          </Reveal>
-
-          <Reveal className="me-story">
-            <h2>Get to Know Me</h2>
-            <p>Hello! Thank you for checking out my portfolio. Outside of work, I apply my user-driven approach to everyday life so that people who interact with me leave with a positive experience.</p>
-            <p>I have been playing video games for as long as I can remember, starting with Warcraft 3. I enjoy a wide variety of games, especially Final Fantasy XV, Arknights, and Honkai: Star Rail. I am also an avid animal lover and spend whatever free time I can with my cats and my horse.</p>
-            <p>I love travelling and visiting family overseas. I have explored much of Europe, and South Korea is next on my list.</p>
-            <p>I believe technology should improve people’s lives. Figma Agent and I co-designed this portfolio, then a front-end developer and Vercel brought it to life. I actively research how and why AI is being used in design today. Want to know more? Let’s connect :)</p>
           </Reveal>
 
           <Reveal className="me-gallery">

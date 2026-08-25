@@ -82,9 +82,9 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .hero-image-centre { width: 25%; height: 250px; left: 37.5%; top: 0; transform: rotate(.6deg); z-index: 2; }
 .hero-image-right { width: 32%; height: 170px; right: 0; top: 49px; transform: rotate(1.8deg); }
 .hero-copy { text-align: center; width: min(1160px, 96vw); margin-top: 4px; }
-.hero-copy h1 { margin: 0; font-size: clamp(4.6rem, 9vw, 8rem); font-weight: 500; line-height: .96; letter-spacing: -.08em; color: transparent; background: linear-gradient(180deg, var(--periwinkle), var(--rose)); background-clip: text; -webkit-background-clip: text; }
-.hero-kicker { margin: 7px 0 3px; font: 500 clamp(1.25rem, 2.1vw, 2rem) 'Geist Mono'; }
-.hero-name { margin-bottom: 24px; font: 400 clamp(1rem, 1.5vw, 1.35rem) 'Geist Mono'; }
+.hero-copy h1 { margin: 0; font-size: clamp(3.25rem, 6vw, 5.4rem); font-weight: 500; line-height: .98; letter-spacing: -.07em; color: transparent; background: linear-gradient(180deg, var(--periwinkle), var(--rose)); background-clip: text; -webkit-background-clip: text; }
+.hero-name { margin: 10px 0 18px; font: 600 clamp(1.8rem, 3.8vw, 3.2rem) 'Geist Mono'; letter-spacing: -.055em; line-height: 1.05; }
+.hero-kicker { margin: 0 0 22px; font: 400 clamp(1.05rem, 1.8vw, 1.5rem) 'Geist Mono'; }
 .pill-row { display: flex; flex-wrap: wrap; gap: 9px; }
 .hero-pills { justify-content: center; }
 .pill { display: inline-flex; align-items: center; gap: 7px; min-height: 32px; padding: 6px 12px; border-radius: 7px; font-size: .73rem; line-height: 1; background: #f0f0f5; border: 1px solid rgba(51,51,51,.04); white-space: nowrap; }
@@ -101,6 +101,7 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .skills-section { background: #fff; }
 .skills-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 76px; }
 .skills-pills { max-width: 580px; }
+.expertise-copy { max-width: 940px; margin: 20px 0 0; color: #4f4f4f; font-size: .86rem; line-height: 1.58; }
 .photo-collage { margin-top: 34px; height: 285px; display: grid; grid-template-columns: .78fr 1.32fr 1.32fr .78fr; grid-template-rows: 1fr; gap: 14px; }
 .photo-collage img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; transition: transform .35s ease, box-shadow .35s ease; }
 .photo-collage img:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 0 18px 45px rgba(51,51,51,.14); z-index: 3; }
@@ -259,6 +260,8 @@ h1, h2, h3, .brand, .pill, .eyebrow, .text-link, .back-link { font-family: 'Geis
 .me-portrait img { width: 100%; max-height: 560px; object-fit: cover; border-radius: 10px; }
 .me-story { max-width: 980px; margin-top: 68px; }
 .me-story h2 { font-size: clamp(1.8rem, 3.8vw, 3.6rem); }
+.me-question { font: 500 clamp(1.2rem, 2.4vw, 1.8rem) 'Geist Mono'; color: var(--ink) !important; }
+.me-highlights { margin-top: 58px; }
 .me-gallery { margin-top: 55px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .me-gallery img { width: 100%; height: 430px; object-fit: cover; border-radius: 9px; }
 

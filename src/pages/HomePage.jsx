@@ -90,8 +90,8 @@ export default function HomePage() {
 
         <Reveal className="hero-copy" delay={150}>
           <h1>Hello!</h1>
-          <p className="hero-kicker">It’s nice to meet you <span aria-hidden="true">🥰</span></p>
-          <p className="hero-name">My Name is Kalley <span aria-hidden="true">💗</span></p>
+          <p className="hero-name">My Name is Kalley</p>
+          <p className="hero-kicker">Let me introduce myself:</p>
           <div className="pill-row hero-pills">
             {traits.map(([icon, text]) => <Pill key={text} icon={icon}>{text}</Pill>)}
           </div>
@@ -108,11 +108,14 @@ export default function HomePage() {
         <div className="skills-grid content-width">
           <Reveal>
             <div className="section-heading-row">
-              <h2>The Things I’m Good At</h2><span aria-hidden="true">👌🏻</span>
+              <h2>Expertise and Capabilities</h2>
             </div>
             <div className="pill-row skills-pills">
               {skills.map(([icon, text]) => <Pill key={text} icon={icon}>{text}</Pill>)}
             </div>
+            <p className="expertise-copy">
+              I combine user research, strategic thinking &amp; human-centered design to create intuitive experiences for complex digital products. Over the past several years I&apos;ve worked across research, usability testing, enterprise software and digital product design, helping teams make better decisions through evidence rather than assumption. My approach combines analytical thinking with empathy, allowing me to bridge the gap between user needs, business objectives and technical realities.
+            </p>
             <div className="photo-collage">
               <img src={asset('alt-home-2', '20190807_094640 1.png')} alt="Sketching an interface on paper" />
               <img src={asset('alt-home-2', '20190723_124749 1.png')} alt="UX flow sketched on a whiteboard" />
@@ -123,7 +126,7 @@ export default function HomePage() {
 
           <Reveal delay={120} className="process-column" id="process">
             <div className="section-heading-row">
-              <h2>My UX Process</h2><span aria-hidden="true">🤓</span>
+              <h2>An Evidence Based Design Approach</h2>
             </div>
             <img className="process-image" src={asset('alt-home-2', 'quick steps 1.png')} alt="Kalley’s iterative UX design process" />
             <img className="process-image research-process" src={asset('alt-home-2', 'Ux process 1.png')} alt="Kalley’s UX research process" />
@@ -135,7 +138,7 @@ export default function HomePage() {
         <div className="content-width">
           <Reveal>
             <div className="section-heading-row partners-title">
-              <h2>Some Places I’ve Worked With</h2><span aria-hidden="true">🤝</span>
+              <h2>Some Places I’ve Worked With</h2>
             </div>
             <div className="partner-strip" aria-label="Selected clients and collaborators">
               <img src={asset('alt-home-3', 'image 4.png')} alt="University of Pretoria" />
