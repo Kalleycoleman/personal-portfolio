@@ -1,6 +1,8 @@
 import { Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
+const cvUrl = 'https://drive.google.com/file/d/1h9FmzsDQv_cDBOt_jJYEjeZN8hHuQsk2/view?usp=sharing'
+
 export default function SiteFooter() {
   return (
     <footer className="site-footer" id="contact">
@@ -8,7 +10,7 @@ export default function SiteFooter() {
         <h2>Let’s design better user experiences together <Heart size={30} fill="currentColor" /></h2>
         <div className="footer-links">
           <a href="mailto:kalley.kcoleman@gmail.com">kalley.kcoleman@gmail.com</a>
-          <span>Résumé coming soon</span>
+          <a href={cvUrl} target="_blank" rel="noreferrer">View my CV ↗</a>
           <a href="https://www.linkedin.com/in/kalley-coleman/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
       </div>

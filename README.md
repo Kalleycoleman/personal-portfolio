@@ -22,4 +22,4 @@ npm run build
 - `/work` — Fraxes.AI case study
 - `/about/work` — broader work, research, and lecturing stories
 
-Contact, résumé, and additional project URLs are intentionally marked as pending until final links are supplied.
+Additional project URLs are intentionally marked as pending until final links are supplied.
